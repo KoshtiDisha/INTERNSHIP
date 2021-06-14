@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="800dp"
+        android:layout_height="80dp"
+        android:src="@drawable/ic_baseline_security_24"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/im"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:textSize="20dp"/>
+
+
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/fn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/re"
+        android:hint="Full Name"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="10dp"/>
+
+
+    <EditText
+        android:id="@+id/ee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fn"
+        android:layout_marginRight="20dp"
+        android:hint="Email Address (For receiving emails)"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/mp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ee"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:hint="Mobile Number"
+        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+        android:drawablePadding="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/pa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/mp"
+        android:hint="Password"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"
+        android:drawablePadding="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/paa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/pa"
+        android:hint="Confirm Password"
+        android:drawableLeft="@drawable/ic_baseline_lock_open_24"/>
+
+
+
+    <EditText
+        android:id="@+id/ww"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/paa"
+        android:hint="Whatsapp Number"
+        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+        android:drawablePadding="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/bd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/ww"
+        android:hint="Birth Date (Optional)"
+        android:drawableLeft="@drawable/ic_baseline_cake_24"
+        android:drawablePadding="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/ma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/bd"
+        android:hint="Marriage Anniversary (Optional) "
+        android:drawableLeft="@drawable/ic_baseline_local_fire_department_24"
+        android:drawablePadding="10dp"/>
+
+
+
+    <EditText
+        android:id="@+id/gs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/ma"
+        android:hint="GSTIN (Optional)"
+        android:drawableLeft="@drawable/ic_baseline_notes_24"
+        android:drawablePadding="10dp"/>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gs"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Register"
+        android:backgroundTint="#3F51B5"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/da"
+        android:layout_below="@+id/reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an Account ? "
+        android:layout_marginLeft="80dp"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/da"
+        android:layout_below="@+id/reg"
+        android:text="Sign Up"
+        android:textColor="#0015D4"
+        android:layout_marginLeft="10dp"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/he"
+        android:layout_below="@+id/reg"
+        android:layout_toRightOf="@+id/su"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="here"
+        android:layout_marginLeft="5dp"/>
+
+
+</RelativeLayout>
